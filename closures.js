@@ -46,21 +46,27 @@ function callFriend(name) {
 */
 
 //Code Here
+let callJake = callFriend("Jake");
+callJake("435-555-9248");
 
 ////////// PROBLEM 3 //////////
 
 /*
   Write a function called makeCounter that makes the following code work properly.
 */
-
 //Code Here
-
-//Uncomment this once you make your function
-//   var count = makeCounter();
-//   count(); // 1
-//   count(); // 2
-//   count(); // 3
-//   count(); // 4
+function makeCounter() {
+  let num = 0;
+  return function makeCounter2() {
+    return ++num;
+  };
+}
+// Uncomment this once you make your function
+// var count = makeCounter();
+// count(); // 1
+// count(); // 2
+// count(); // 3
+// count(); // 4
 
 ////////// PROBLEM 4 //////////
 
@@ -75,8 +81,16 @@ function callFriend(name) {
 
 function counterFactory(value) {
   // Code here.
-
-  return {};
+  function inc() {
+    return ++value;
+  }
+  function dec() {
+    return --value;
+  }
+  return {
+    inc,
+    dec,
+  };
 }
 
 counter = counterFactory(10);
