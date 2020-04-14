@@ -1,14 +1,4 @@
-/*
-  Once you complete a problem,
-  refresh ./constructors.html in your browser and check to see if the problem's test(s) are passing.
-  Passed tests will be indicated by a green circle.
-  Failed tests will be indicated by a red X.
-
-  You can refresh the page at any time to re-run all the tests.
-*/
-
 ////////// PROBLEM 1 //////////
-
 /*
   Create a constructor function called CarFactory that will build car objects with make and model properties.
   The values for the make and model will come from two parameters, make and model (in that order).
@@ -21,7 +11,6 @@ function CarFactory(make, model) {
 }
 
 ////////// PROBLEM 2 //////////
-
 // Do not edit the code below.
 
 function Employee(name, email, hireDate) {
@@ -41,7 +30,6 @@ function Employee(name, email, hireDate) {
 let bob = new Employee("Bob", "bob@gmail.com", "01-02-98");
 
 ////////// PROBLEM 3 //////////
-
 // Do not edit the code below.
 
 var prius = new Car("Toyota", "Prius", 2011);
@@ -73,7 +61,6 @@ function Car(make, model, year) {
 }
 
 ////////// PROBLEM 4 //////////
-
 /*
   Here we have a constructor function named Movie that takes in 3 parameters:
     name (a string), genre (a string), and rating (a number withing 1-100 that has been averaged out from previous given ratings).
@@ -96,7 +83,6 @@ Movie.prototype.changeRating = function (num) {
 };
 
 ////////// PROBLEM 5 //////////
-
 // Write a constructor function called User. This function should take in 4 parameters called name, age, email, and savedPosts in that order. Name and email will be strings, age will be a number and savedPosts will be an array of objects. These objects will each have 3 properties: id (a number), title (a string), and rating (a number between 1 and 5). These objects are the posts that the user will have saved to their account.
 
 // Once the User constructor function is created, write a prototype method for the User function. Name this method addSavedPost. It should take in three parameters: id (a number), title (a string) and rating (a number). Use these parameters to create a new object and add it to the savedPosts array. Make sure to name the properties the same as described previously (id, title, rating).
